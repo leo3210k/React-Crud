@@ -1,0 +1,29 @@
+header.header {
+  grid-area: header;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+
+  box-shadow: var(--shadow);
+}
+
+.title {
+  margin-top: 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.title__text {
+  font-size: 1.7rem;
+}
+
+.title__icon {
+  margin-right: 10px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  font-weight: 200;
+}

@@ -1,0 +1,122 @@
+.form > * {
+  margin: 20px 0px;
+}
+
+.form-inputs {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.field__label {
+  margin-bottom: 10px;
+}
+
+.field__input {
+  width: 38vw;
+  height: 4vh;
+  padding: 0px 10px;
+  
+  border-radius: 3px;
+  border: var(--input-border);
+}
+
+.field__input::placeholder {
+  font-size: 1rem;
+  align-self: flex-start;
+}
+
+hr {
+  border-color: var(--hr-border-color);
+}
+
+.form-actions {
+  display: flex;
+  justify-content: end;
+}
+
+.form-actions > button {
+  margin: 0px 5px;
+  padding: 10px 15px;
+
+  font-size: 1rem;
+  color: var(--white);
+  border: none;
+  border-radius: 4px;
+}
+
+.form-actions--blue {
+  background-color: var(--deep-sky-blue);
+}
+
+.form-actions--gray {
+  background-color: var(--pale-sky);
+}
+
+.form-actions > *:hover {
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+}
+
+.table-head > tr {
+  padding-bottom: 10px;
+
+  border-bottom: 2px solid rgba(203, 197, 197, 0.674);
+}
+
+tr { 
+  text-align: center;
+}
+
+tbody > tr:nth-child(even) {
+  background-color: #fcfdff;
+}
+
+tbody > tr:nth-child(odd) {
+  background-color: #cfd5e1;
+}
+
+th, td {
+  padding: 20px 0px;
+}
+
+.table-action {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.table-action--edit {
+  background-color: #ffd000;
+}
+
+.table-action--delete {
+  margin-left: 20px;
+  background-color: #ff0800;
+}
+
+.table-action:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 450px) {
+  .table-actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .table-action--delete {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
